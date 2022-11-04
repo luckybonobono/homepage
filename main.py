@@ -21,7 +21,6 @@ def photo_apply():
 
 @app.route('/list')
 def list():
-    list=[]
     return render_template('list.html')
 
 
