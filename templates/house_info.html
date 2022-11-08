@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>리스트 작성하기</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>등록한 집 세부내용</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -666,6 +666,4 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 
-</style></head><body><article id="d2e3f843-5c96-4f58-a961-63f11905f0a3" class="page sans"><header><h1 class="page-title">리스트 작성하기</h1></header><div class="page-body"><table id="3d86bec6-90da-4407-850a-45d41006521e" class="simple-table"><tbody><tr id="36a1f72e-da26-4b85-bcf7-0b64ebab497c"><td id="AGPe" class="">{{zero}}</td><td id="M^J=" class="">{{one}}</td><td id="q_{~" class="">{{two}}</td></tr><tr id="fb935300-5473-4546-b02e-8e26234b79ff"><td id="AGPe" class=""></td><td id="M^J=" class=""></td><td id="q_{~" class=""></td></tr><tr id="f0a7f062-89b1-479f-8096-f01dde3b5719"><td id="AGPe" class=""></td><td id="M^J=" class=""></td><td id="q_{~" class=""></td></tr></tbody></table><p id="87c4252f-ac9e-4663-bf00-56302c0ac940" class="">
-</p>{% if lenght != 0%}{% for house in house_list %}<a href = {{url_for("house_info", index = house[0])}}><h2 id="" class="">{{house[1]}}</h2></a>{% endfor %}{% else %}<h2 id="" class="">집을 등록해주세요</h2>{% endif %}
-</div></article></body></html>
+</style></head><body><article id="7db67232-e4fa-4b00-96c7-3058b9ca9091" class="page sans"><header><h1 class="page-title">등록한 집 세부내용</h1></header><div class="page-body"><p id="a8a974b3-2106-4a69-ba97-437d17d4d368" class="">집위치 - {{location}}</p><p id="4f930e1e-e544-4142-be78-5173eb1cb021" class="">청결도 - {% if cleaness == True%}★ {% else %}☆ {% endif %}</p><p id="264a2a63-586d-4b4e-a821-f3811f4d06b3" class="">빌트인 항목 - {{built_in}}</p></div></article></body></html>

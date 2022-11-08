@@ -24,7 +24,7 @@ def now_index():
 
 def load_house(idx):
     df = pd.read_csv("database.csv")
-    house_inf = df.iloc[idx]
+    house_info = df.iloc[idx]
     return house_info
 
 

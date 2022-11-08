@@ -35,7 +35,19 @@ def upload_done():
 @app.route('/list')
 def list():
     house_list = database.load_list()
-    return render_template('list.html', house_list = house_list)
+    lenght = len(house_list)
+    return render_template('list.html', house_list = house_list, lenght = lenght)
+
+@app.route('/house_info/<int:index>/')
+def house_info(index):
+    house_info = database.load_house(index)
+    location = house_info["location"]
+    cleaness = house_info["cleaness"]
+    built_in = house_info["built_in"]
+
+    return render_template("house_info.html", location=location, cleaness=cleaness, built_in=built_in)
+
+
 
 
 
