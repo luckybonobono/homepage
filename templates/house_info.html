@@ -667,3 +667,6 @@ blockquote {
 }
 
 </style></head><body><article id="7db67232-e4fa-4b00-96c7-3058b9ca9091" class="page sans"><header><h1 class="page-title">등록한 집 세부내용</h1></header><div class="page-body"><p id="a8a974b3-2106-4a69-ba97-437d17d4d368" class="">집위치 - {{location}}</p><p id="4f930e1e-e544-4142-be78-5173eb1cb021" class="">청결도 - {% if cleaness == True%}★ {% else %}☆ {% endif %}</p><p id="264a2a63-586d-4b4e-a821-f3811f4d06b3" class="">빌트인 항목 - {{built_in}}</p></div></article></body></html>
+<div>
+    <img src = {{url_for("static", filename = photo)}}>
+</div>

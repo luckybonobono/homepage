@@ -45,7 +45,9 @@ def house_info(index):
     cleaness = house_info["cleaness"]
     built_in = house_info["built_in"]
 
-    return render_template("house_info.html", location=location, cleaness=cleaness, built_in=built_in)
+    photo = f"img/{index}.jpeg"
+
+    return render_template("house_info.html", location=location, cleaness=cleaness, built_in=built_in, photo = photo)
 
 
 
